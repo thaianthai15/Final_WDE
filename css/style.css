@@ -60,7 +60,6 @@ body {
 .heading-font {
   font-family: var(--font-heading);
   color: var(--head-text);
-  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -115,7 +114,6 @@ body {
 .must-visit-title {
   font-family: var(--font-heading);
   color: var(--head-text);
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 2.5rem;
   letter-spacing: 2px;
