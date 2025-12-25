@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    const welcomeModalElement = document.getElementById('welcomeTravelModal');
+    if (welcomeModalElement) {
+        const welcomeModal = new bootstrap.Modal(welcomeModalElement);
+        welcomeModal.show();
+    }
+
     const btnPlan = document.getElementById('btn-open-modal');
     const planModal = new bootstrap.Modal(document.getElementById('planModal'));
 
