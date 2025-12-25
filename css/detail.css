@@ -1,0 +1,272 @@
+.navbar {
+  position: relative !important;
+  background-color: var(--bg-color) !important;
+}
+
+.back-arrow {
+  font-size: 2rem;
+  color: var(--head-text);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-arrow:hover {
+  color: #b32a2a;
+  transform: translateX(-5px);
+}
+
+.text-main-red {
+  color: var(--head-text) !important;
+  font-family: var(--font-heading);
+}
+
+.lead-text {
+  line-height: 1.8;
+  color: #444;
+}
+
+.transport-table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.transport-table thead th {
+  border-bottom: none;
+  color: var(--head-text);
+  font-size: 0.85rem;
+  padding-bottom: 15px;
+}
+
+.transport-table tbody td {
+  padding: 20px;
+  vertical-align: middle;
+  border: none;
+  background-color: white;
+}
+
+.transport-table tbody tr.bg-light-row td {
+  background-color: #fcf8f5;
+}
+
+.activity-banner {
+  width: 100%;
+  height: 700px;
+  background: url("../assets/fuji_climb.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.activity-overlay {
+  width: 100%;
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(249, 240, 232, 1) 0%,
+    rgba(249, 240, 232, 0) 100%
+  );
+}
+
+.activity-title {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer {
+  background-color: #e1b486;
+  margin-top: 0 !important;
+}
+
+.tateyama-banner {
+  background: url("../assets/Tateyama_Footer.png") no-repeat center center;
+  background-size: cover;
+}
+
+.tateyama-banner .activity-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  padding: 0 15px;
+}
+
+.hakone-banner {
+  background: url("../assets/Onsen_Footer.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hakone-banner .activity-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  padding: 0 20px;
+}
+
+.shirakawa-banner {
+  background: url("../assets/Shirakawa_Footer.png") no-repeat center center;
+  background-size: cover;
+}
+
+.shirakawa-banner .activity-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  padding: 0 20px;
+}
+
+.takayama-banner {
+  background: url("../assets/Takayama_Footer.png") no-repeat center center;
+  background-size: cover;
+}
+
+.takayama-banner .activity-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  padding: 0 20px;
+}
+
+.navbar {
+  position: relative !important;
+  background-color: var(--bg-color) !important;
+  z-index: 1050;
+}
+
+.back-arrow {
+  font-size: 2rem;
+  color: var(--head-text);
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.back-arrow:hover {
+  color: #b32a2a;
+  transform: translateX(-5px);
+}
+
+.lead-text {
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+.table-responsive {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.transport-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+}
+
+.transport-table thead th {
+  background-color: #fff;
+  color: var(--head-text);
+  font-size: 0.85rem;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.transport-table tbody td {
+  padding: 20px;
+  vertical-align: middle;
+  border: none;
+  background-color: white;
+}
+
+.transport-table tbody tr.bg-light-row td {
+  background-color: #fcf8f5;
+}
+
+.activity-banner {
+  width: 100%;
+  height: 70vh; 
+  min-height: 500px;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.activity-overlay {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(249, 240, 232, 1) 30%,
+    rgba(249, 240, 232, 0) 100%
+  );
+}
+
+.activity-title {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+@media (max-width: 991.98px) {
+  main.container {
+    margin-top: 1rem !important;
+    padding-top: 2rem !important;
+  }
+
+  .lead-text, .text-muted{
+    font-size: 1.5rem;
+  }
+
+  .heading-font.display-4,
+  .heading-font.display-5 {
+    font-size: 2.5rem;
+  }
+
+  .col-lg-7 img {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .back-arrow {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .heading-font.display-4,
+  .heading-font.display-5 {
+    font-size: 2rem;
+  }
+
+  .lead-text {
+    font-size: 0.95rem;
+  }
+
+  .transport-table tbody td {
+    padding: 12px 15px;
+    font-size: 0.7rem;
+  }
+
+  .activity-banner {
+    height: 350px;
+    min-height: 350px;
+  }
+
+  .activity-overlay {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .activity-title {
+    font-size: 1.7rem;
+  }
+
+  .heading-font.fs-1 {
+    font-size: 1.5rem !important;
+  }
+}

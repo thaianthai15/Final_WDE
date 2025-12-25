@@ -1,0 +1,166 @@
+.back-button {
+  color: var(--head-text);
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+}
+
+.detail-hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.detail-hero-image {
+  width: 100%;
+  display: block;
+}
+
+.detail-hero-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(
+    to bottom,
+    rgba(249, 240, 232, 0) 0%,
+    rgba(249, 240, 232, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-title-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-heading);
+  color: var(--head-text);
+  font-size: 4.5rem;
+  margin: 0;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.7;
+}
+
+.highlight-title {
+  font-family: var(--font-heading);
+  color: var(--head-text);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.side-image {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box b {
+  color: #000;
+}
+
+@media (max-width: 991.98px) {
+  .detail-hero-image {
+    height: 400px;
+  }
+  .content-section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-hero-image {
+    height: 300px;
+  }
+
+  .hero-title-overlay {
+    bottom: 5px;
+    white-space: normal;
+    line-height: 1.1;
+  }
+
+  .row.align-items-center {
+    flex-direction: column-reverse;
+    text-align: justify;
+  }
+
+  .col-md-5 {
+    margin-top: 30px;
+  }
+
+  .highlight-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .info-box .col-md-7,
+  .info-box .col-md-5,
+  .info-box .col-md-6 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .text-center {
+    font-size: 1.5rem;
+  }
+
+  .list-unstyled {
+    font-size: 1.5rem;
+  }
+
+  .miso-image {
+    width: 100%;
+  }
+
+  .info-box p {
+    font-size: 1.2rem;
+  }
+
+  .experience-list, p.mb-3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .detail-hero-image {
+    height: 250px;
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+  }
+
+  .miso-image {
+    width: 100%;
+  }
+  
+  .list-unstyled {
+    font-size: 0.8rem;
+  }
+
+  .experience-list, p.mb-3 {
+    font-size: 0.9rem;
+  }
+}

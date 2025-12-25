@@ -1,0 +1,95 @@
+.food-hero {
+  position: relative;
+  min-height: 75vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../assets/Banner_Food.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.text-main-red {
+  color: var(--head-text) !important;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .food-hero {
+    min-height: 60vh;
+    padding-top: 120px;
+  }
+
+  .food-hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .heading-font.fs-1 {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-subtext {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .food-hero h1 {
+    font-size: 3.5rem !important;
+  }
+}
+
+.destination-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card .card-text {
+  flex-grow: 1;
+}
+
+@media (max-width: 576px) {
+  .destination-card .card-img-container {
+    height: 180px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .destination-card .card-img-container {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-md-5 .destination-card .card-img-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .btn-more {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+  }
+}
